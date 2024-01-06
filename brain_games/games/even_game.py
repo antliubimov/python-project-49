@@ -13,12 +13,12 @@ def check_even(number):
 
 
 def even_game_fn():
-  MIN_NUMBER = 0
-  MAX_NUMBER = 100
-  question = randrange(MIN_NUMBER, MAX_NUMBER)
-  answer = check_even(question)
-  return (question, answer)
+    MIN_NUMBER = 0
+    MAX_NUMBER = 100
+    question = randrange(MIN_NUMBER, MAX_NUMBER)
+    answer = check_even(question)
+    return (question, answer)
 
 
 def even_game():
-  play_game(EVEN_RULES, even_game_fn)
+    play_game(EVEN_RULES, even_game_fn)
