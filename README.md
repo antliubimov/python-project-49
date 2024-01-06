@@ -15,3 +15,6 @@ then install package:
 
 ### Run and play brain-even game:
 [![asciicast](https://asciinema.org/a/630037.svg)](https://asciinema.org/a/630037)
+
+### Run and play brain-calc game:
+[![asciicast](https://asciinema.org/a/630157.svg)](https://asciinema.org/a/630157)
