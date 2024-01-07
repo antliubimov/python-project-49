@@ -15,9 +15,7 @@ def is_odd(number):
 def gcd(m, n):
     if m == 0:
         return round(n)
-    elif n == 0:
-        return round(m)
-    elif m == n:
+    elif n == 0 or m == n:
         return round(m)
     elif (m == 1 and n > 0) or (n == 1 and m > 0):
         return 1
