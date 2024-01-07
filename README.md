@@ -18,3 +18,6 @@ then install package:
 
 ### Run and play brain-calc game:
 [![asciicast](https://asciinema.org/a/630157.svg)](https://asciinema.org/a/630157)
+
+### Run and play brain-gcd game:
+[![asciicast](https://asciinema.org/a/630243.svg)](https://asciinema.org/a/630243)

@@ -14,11 +14,11 @@ def is_odd(number):
 
 def gcd(m, n):
     if m == 0:
-        return n
+        return round(n)
     elif n == 0:
-        return m
+        return round(m)
     elif m == n:
-        return m
+        return round(m)
     elif (m == 1 and n > 0) or (n == 1 and m > 0):
         return 1
     elif is_even(m) and is_even(n):
