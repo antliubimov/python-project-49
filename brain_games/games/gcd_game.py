@@ -22,16 +22,16 @@ def gcd(m, n):
     elif (m == 1 and n > 0) or (n == 1 and m > 0):
         return 1
     elif is_even(m) and is_even(n):
-        return gcd(m/2, n/2) * 2
+        gcd(m/2, n/2) * 2
     elif is_even(m) and is_odd(n):
-        return gcd(m/2, n)
+        gcd(m/2, n)
     elif is_odd(m) and is_even(n):
-        return gcd(m, n/2)
+        gcd(m, n/2)
     elif is_odd(m) and is_odd(n):
         if n > m:
-            return gcd(m, (n - m)/2)
+            gcd(m, (n - m)/2)
         else:
-            return gcd((m - n)/2, n)
+            gcd((m - n)/2, n)
 
 
 def gcd_game_fn():
