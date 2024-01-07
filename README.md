@@ -24,3 +24,6 @@ then install package:
 
 ### Run and play brain-progression game:
 [![asciicast](https://asciinema.org/a/630291.svg)](https://asciinema.org/a/630291)
+
+### Run and play brain-prime game:
+[![asciicast](https://asciinema.org/a/630297.svg)](https://asciinema.org/a/630297)
