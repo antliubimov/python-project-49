@@ -21,7 +21,8 @@ def gcd(m, n):
         return round(m)
     elif (m == 1 and n > 0) or (n == 1 and m > 0):
         return 1
-    elif is_even(m) and is_even(n):
+
+    if is_even(m) and is_even(n):
         gcd(m/2, n/2) * 2
     elif is_even(m) and is_odd(n):
         gcd(m/2, n)
