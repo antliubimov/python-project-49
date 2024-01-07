@@ -12,30 +12,26 @@ def is_odd(number):
     return number % 2 != 0
 
 
-def gcd(m, n):
-    if m == 0:
-        return round(n)
-    if n == 0 or m == n:
-        return round(m)
-    if (m == 1 and n > 0) or (n == 1 and m > 0):
-        return 1
+def gcd(a, b):
+    m = a
+    n = b
+    d = 1
 
-    result = 0
+    while m != 0 and n != 0:
+        if m % 2 == 0 and n % 2 == 0:
+            d *= 2
+            m /= 2
+            n /= 2
+        elif n % 2 == 1:
+            m /= 2
+        elif m % 2 == 1 and n % 2 == 0:
+            n /= 2
+        elif m % 2 == 1 and n % 2 == 1 and m >= n:
+            m -= n
+        elif m % 2 == 1 and n % 2 == 1 and m < n:
+            n -= m
 
-    if is_even(m):
-        if is_even(n):
-            result = gcd(m/2, n/2) * 2
-        else:
-            result = gcd(m/2, n)
-    elif is_odd(m):
-        if is_even(n):
-            result = gcd(m, n/2)
-        else:
-            if n > m:
-                result = gcd(m, (n - m)/2)
-            else:
-                result = gcd((m - n)/2, n)
-    return result
+    return round(d * n) if m == 0 else round(d * m)
 
 
 def gcd_game_fn():
