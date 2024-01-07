@@ -19,7 +19,7 @@ def check_prime(number):
 
 
 def prime_game_fn():
-    MIN_NUMBER = 0
+    MIN_NUMBER = 1
     MAX_NUMBER = 100
     question = randrange(MIN_NUMBER, MAX_NUMBER)
     answer = check_prime(question)
