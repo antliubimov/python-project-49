@@ -21,3 +21,6 @@ then install package:
 
 ### Run and play brain-gcd game:
 [![asciicast](https://asciinema.org/a/630243.svg)](https://asciinema.org/a/630243)
+
+### Run and play brain-progression game:
+[![asciicast](https://asciinema.org/a/630291.svg)](https://asciinema.org/a/630291)
