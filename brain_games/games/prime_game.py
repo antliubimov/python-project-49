@@ -1,6 +1,6 @@
 from random import randrange
 from math import sqrt, floor
-from brain_games.games.game import play_game
+from brain_games.games.game import play_game, game_fn
 
 PRIME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
@@ -21,9 +21,7 @@ def check_prime(number):
 def prime_game_fn():
     MIN_NUMBER = 1
     MAX_NUMBER = 100
-    question = randrange(MIN_NUMBER, MAX_NUMBER)
-    answer = check_prime(question)
-    return (question, answer)
+    return game_fn(check_prime, MIN_NUMBER, MAX_NUMBER)
 
 
 def prime_game():

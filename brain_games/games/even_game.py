@@ -1,5 +1,5 @@
 from random import randrange
-from brain_games.games.game import play_game
+from brain_games.games.game import play_game, game_fn
 
 EVEN_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
@@ -15,9 +15,7 @@ def check_even(number):
 def even_game_fn():
     MIN_NUMBER = 0
     MAX_NUMBER = 100
-    question = randrange(MIN_NUMBER, MAX_NUMBER)
-    answer = check_even(question)
-    return (question, answer)
+    return game_fn(check_even, MIN_NUMBER, MAX_NUMBER)
 
 
 def even_game():
