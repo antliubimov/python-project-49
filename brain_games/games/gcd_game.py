@@ -22,11 +22,14 @@ def gcd(m, n):
 
     if is_even(m) and is_even(n):
         gcd(m/2, n/2) * 2
-    elif is_even(m) and is_odd(n):
+
+    if is_even(m) and is_odd(n):
         gcd(m/2, n)
-    elif is_odd(m) and is_even(n):
+
+    if is_odd(m) and is_even(n):
         gcd(m, n/2)
-    elif is_odd(m) and is_odd(n):
+
+    if is_odd(m) and is_odd(n):
         if n > m:
             gcd(m, (n - m)/2)
         else:
