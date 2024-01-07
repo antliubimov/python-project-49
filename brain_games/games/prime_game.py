@@ -26,5 +26,5 @@ def prime_game_fn():
     return (question, answer)
 
 
-def even_game():
+def prime_game():
     play_game(PRIME_RULES, prime_game_fn)
