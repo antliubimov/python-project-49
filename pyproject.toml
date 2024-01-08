@@ -1,9 +1,13 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.0"
-description = ""
+version = "1.0.0"
+description = "Mind Games - a set of five console games, built on the principle of popular mobile applications for brain pumping"
 authors = ["Anton Liubimov <ant.liubimov@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/antliubimov/python-project-49"
+classifiers = [
+    "Topic :: Software Development :: Games",
+]
 packages = [
 	{ include = "brain_games" },
 ]
