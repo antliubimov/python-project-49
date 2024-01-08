@@ -7,8 +7,8 @@ def view_rules(rules):
     print(rules)
 
 
-def wrongAnswer(question_answer, answer):
-    print(f"'{question_answer}' is wrong answer ;(. Correct answer was '{answer}'.")
+def wrongAnswer(ques_answer, answer):
+    print(f"'{ques_answer}' is wrong answer ;(. Correct answer was '{answer}'.")
 
 
 def game_fn(fn, min=0, max=100):

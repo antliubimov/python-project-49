@@ -1,8 +1,8 @@
-from random import randrange
 from math import sqrt, floor
 from brain_games.games.game import play_game, game_fn
 
 PRIME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
 
 def is_prime_number(number):
     if number < 2:

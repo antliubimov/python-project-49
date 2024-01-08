@@ -1,4 +1,3 @@
-from random import randrange
 from brain_games.games.game import play_game, game_fn
 
 EVEN_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
