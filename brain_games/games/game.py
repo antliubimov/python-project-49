@@ -28,7 +28,7 @@ def play_game(rules, play_game_fn):
         question_answer = prompt.string("Your answer: ")
         if answer != question_answer:
             wrongAnswer(question_answer, answer)
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             break
         attempts += 1
         print("Correct!")
