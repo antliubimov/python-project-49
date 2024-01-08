@@ -34,5 +34,5 @@ def play_game(rules, play_game_fn):
         print("Correct!")
 
     if attempts == ATTEMPTS_COUNT:
-        print(f"Congratulations, {name}")
+        print(f"Congratulations, {name}!")
     return
