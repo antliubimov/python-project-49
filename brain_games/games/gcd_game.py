@@ -15,23 +15,23 @@ def is_odd(number):
 def gcd(a, b):
     m = a
     n = b
-    d = 1
+    d = 0
 
-    while m != 0 and n != 0:
-        if m % 2 == 0 and n % 2 == 0:
-            d *= 2
+    while m != n:
+        if is_even(m) and is_even(n):
             m /= 2
             n /= 2
-        elif n % 2 == 1:
+            d += 1
+        elif is_even(m) and is_odd(n):
             m /= 2
-        elif m % 2 == 1 and n % 2 == 0:
+        elif is_odd(m) and is_even(n):
             n /= 2
-        elif m % 2 == 1 and n % 2 == 1 and m >= n:
-            m -= n
-        elif m % 2 == 1 and n % 2 == 1 and m < n:
-            n -= m
+        elif is_odd(m) and is_odd(n):
+            if m < n:
+                n, m = m, n
+            m = (m - n) / 2
 
-    return round(d * n) if m == 0 else round(d * m)
+    return round(2 ** d * m)
 
 
 def gcd_game_fn():
