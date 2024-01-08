@@ -12,9 +12,7 @@ def is_odd(number):
     return number % 2 != 0
 
 
-def gcd(a, b):
-    m = a
-    n = b
+def gcd(m, n):
     d = 0
 
     while m != n:
