@@ -24,7 +24,7 @@ def gcd(m, n):
             m /= 2
         elif is_odd(m) and is_even(n):
             n /= 2
-        elif is_odd(m) and is_odd(n):
+        else:
             if m < n:
                 n, m = m, n
             m = (m - n) / 2
